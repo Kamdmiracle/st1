@@ -40,7 +40,17 @@
         .nav-links a { color: var(--white); font-size: 0.9rem; font-weight: 400; opacity: 0.8; transition: 0.3s; }
         .nav-links a:hover { opacity: 1; color: var(--brand-gold); }
         
-        .page-header { height: 60vh; background: linear-gradient(rgba(10, 15, 29, 0.7), rgba(10, 15, 29, 0.8)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white); padding: 0 10%; margin-top: 0; }
+        .page-header { 
+    min-height: 50vh; /* Changed from height to min-height for safer text rendering */
+    background: linear-gradient(rgba(10, 15, 29, 0.7), rgba(10, 15, 29, 0.8)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80') center/cover no-repeat; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: var(--white); 
+    padding: 120px 10% 60px; /* Added 120px top padding to safely push content past the fixed navbar */
+}
         .page-header h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 20px; max-width: 1000px; }
         .page-header p { font-size: 1.2rem; max-width: 700px; font-weight: 300; }
         
@@ -88,7 +98,7 @@
             <li><a href="facilities.html" style="color: var(--brand-gold);">Facilities</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="management.html">Management</a></li>
+            <!-- <li><a href="management.html">Management</a></li> -->
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="nav-btn">
@@ -109,7 +119,7 @@
             <p style="margin-top: 20px;">Every corner of our facility has been thoughtfully curated to offer guests, vendors, and hosts a first-class experience from arrival to departure.</p>
         </div>
         <div class="image-wrapper" data-aos="fade-left">
-            <img src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80" alt="Hall Interior Layout">
+            <img src="img/sthallblue.jpg" alt="Hall Interior Layout">
         </div>
     </section>
 
